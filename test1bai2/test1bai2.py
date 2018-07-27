@@ -7,4 +7,4 @@ wordcount = Counter(file_input.read().split())
 #open output file for writting
 file_output = open ('output.txt', 'w', encoding='utf-8')
 #wtite output into file
-for item in wordcount.items(): file_output.write("{} {} \n".format(*item))
+for item in wordcount.items(): file_output.write(str(item))
